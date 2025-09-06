@@ -1,4 +1,6 @@
-FROM alpine:latest
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:14.3.2
+
+FROM $BUILD_FROM
 
 ARG FRP_VERSION=0.64.0
 
