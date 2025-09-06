@@ -20,7 +20,7 @@ local_port = 8123
 custom_domains = ${CUSTOM_DOMAINS}
 EOF
 
-echo "Starting frpc with config:"
+bashio::log.info "Starting frpc with config:"
 cat /etc/frpc.ini
 
 exec /usr/local/bin/frpc -c /etc/frpc.ini
